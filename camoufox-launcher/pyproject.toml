@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "camoufox-launcher"
+version = "0.1.0"
+description = "Tiny CLI to launch Camoufox Playwright server with Python-client features"
+requires-python = ">=3.10"
+
+dependencies = [
+  "PyYAML>=6.0"
+]
+
+[project.scripts]
+camoufox-launcher = "cli:main"
+
+[tool.setuptools]
+py-modules = ["cli"]
