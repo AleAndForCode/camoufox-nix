@@ -1,0 +1,71 @@
+# Nix
+result
+result-*
+/nix/store
+*.drv
+*.drv.chroot
+*.drv.all
+*.narinfo
+*.nar
+
+# Direnv / local env
+.direnv/
+.envrc.local
+
+flake.lock.tmp
+
+# Scala / sbt / Bloop / BSP / Metals
+.metals/
+.bloop/
+.bsp/
+.scala-build/
+project/project/
+project/target/
+target/
+out/
+
+# Mill
+.mill/
+out/
+
+# Coursier / Scala CLI local cache dirs
+.coursier/
+.scala/
+
+# Java / Kotlin build artifacts
+*.class
+*.jar
+*.war
+*.ear
+*.kotlin_module
+
+# LSP servers and editor tooling
+.lsp/
+.lsp-cache/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Language servers (common)
+.pyright/
+.ruff_cache/
+.mypy_cache/
+
+# Python virtualenvs and caches
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+
+# Build / test / coverage outputs
+build/
+dist/
+coverage/
+.coverage
+coverage-final.json
+
+# OS junk
+.DS_Store
+Thumbs.db
